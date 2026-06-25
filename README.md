@@ -122,6 +122,16 @@ Uploaded files are processed in memory and are **not stored** by this app. Submi
 documents are sent to the Mistral API for processing. Do not upload confidential
 documents or sensitive personal information.
 
+## Troubleshooting
+
+- **Page loads with no styling (plain text).** Next picked the wrong workspace root
+  because of a stray `package-lock.json` in a parent folder (common on Windows, e.g.
+  `C:\Users\<name>\`). This repo pins the root via `turbopack.root` in
+  `next.config.ts`, so just `git pull` and restart `npm run dev`. You can also delete
+  the stray lockfile.
+- **Status pill shows "Not configured".** `MISTRAL_API_KEY` is missing/empty in
+  `.env.local`. Add it and restart.
+
 ## Known limitations
 
 - In-memory rate limiting is single-instance only.
