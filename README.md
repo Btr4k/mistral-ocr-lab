@@ -29,7 +29,7 @@ Create a free key at **<https://console.mistral.ai/api-keys>**.
 ### 2. Clone and install
 
 ```bash
-git clone https://github.com/<your-username>/mistral-ocr-lab.git
+git clone https://github.com/Btr4k/mistral-ocr-lab.git
 cd mistral-ocr-lab
 npm install
 ```
